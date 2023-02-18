@@ -1,0 +1,35 @@
+.form-container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: white;
+}
+
+.form-registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+}
+
+h1{
+    background-color: white;
+
+}
+
+.input-form{
+    height: 30px;
+    margin: 10px;
+}
+
+.form-button{
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: blue;
+}

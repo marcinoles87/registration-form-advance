@@ -1,6 +1,8 @@
 
 import React from 'react'
 
+import '../components/form.css'
+
 
 
  function Form() {
@@ -8,6 +10,7 @@ import React from 'react'
     <div className='form-container'>
         
         <form className='form-registration'>
+            <h1>Form Registration</h1>
             <input 
             className='input-form'
             type='text'
@@ -25,6 +28,8 @@ import React from 'react'
             type='email'
             placeholder='your email'>
             </input>
+
+            <button className='form-button'>Submit</button>
 
         </form>
 
