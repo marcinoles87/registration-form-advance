@@ -7,20 +7,17 @@
     justify-content: center;
     width: 300px;
     background-color: white;
+    box-shadow: 10px 5px 10px 2px black;
 }
 
 .form-registration{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     
 }
 
-h1{
-    background-color: white;
 
-}
 
 .input-form{
     height: 30px;
