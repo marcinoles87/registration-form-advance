@@ -4,6 +4,7 @@
     left:50%;
     transform: translate(-50%,-50%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 300px;
     background-color: white;
@@ -36,4 +37,11 @@
     background-color: #4b4bff;
     border: 1px solid black;
     border-radius: 20px;
+}
+
+.fullinfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
