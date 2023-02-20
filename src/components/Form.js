@@ -26,29 +26,31 @@ import '../components/form.css'
             className='input-form'
             type='text'
             placeholder=' your name'>
-              
-            </input><p>{name.length >=5 ? '' : 'nazwa za krotka ...'}</p>
+            </input>
+            <p>{name.length >=5 ? '' : 'nazwa za krotka ...'}</p>
 
             <input 
             onChange={e => (setLastName(e.target.value))}
             className='input-form'
             type='text'
             placeholder=' your last name'>
-            </input><p>{lastName.length >=3 ? '' : 'nazwa za krotka ...'}</p>
+            </input>
+            <p>{lastName.length >=3 ? '' : 'nazwa za krotka ...'}</p>
 
             <input 
             onChange={e => (setEmail(e.target.value))}
             className='input-form'
             type='email'
             placeholder=' your email'>
-            </input><p>{email.length >=2 ? '' : 'nazwa za krotka ...'}</p>
+            </input>
+            <p>{email.length >=2 ? '' : 'nazwa za krotka ...'}</p>
 
             <button className='form-button'>Submit</button>
 
         </form>
 
       <div className='fullinfo'>
-        <h1>Full Information</h1>
+        <h1>Full Information about User</h1>
         <h2>{fullName}</h2>
         <h3>{name} {lastName} {email}</h3>
       </div>
