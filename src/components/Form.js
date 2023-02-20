@@ -8,17 +8,30 @@ import '../components/form.css'
 
  function Form() {
 
-  let [name,setName] = useState('');
+  const [name,setName] = useState('');
   const [lastName,setLastName] = useState('');
   const [email,setEmail] = useState('');
 
   const fullName = `${name} ${lastName} ${email}` ;
+
+  const [submitted,setSubmitted] = useState(false)
+
+  const handleSubmitted = (e) =>{
+    e.preventDefault()
+    setSubmitted(true)
+    
+
+    
+  }
   
 
   return (
     <div className='form-container'>
         
-        <form className='form-registration'>
+        <form className='form-registration' onSubmit={handleSubmitted}>
+
+            {submitted ? <div className='succes-message'>Succes ! your message was send</div> : null}
+
             <h1>Form Registration</h1>
 
             <input 
@@ -51,8 +64,8 @@ import '../components/form.css'
 
       <div className='fullinfo'>
         <h1>Full Information about User</h1>
-        <h2>{fullName}</h2>
-        <h3>{name} {lastName} {email}</h3>
+        {fullName}
+        {/* <h3>{name} {lastName} {email}</h3> */}
       </div>
 
 

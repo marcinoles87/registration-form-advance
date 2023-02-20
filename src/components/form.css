@@ -44,9 +44,20 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
 }
 
 p{
     color:red;
     font-size:x-small;
+}
+
+.succes-message{
+    margin:10px 0 ;
+    padding: 10px;
+    border: 2px solid blue;
+    background-color: #4b4bff;
+    color:white;
 }
