@@ -24,21 +24,21 @@ import '../components/form.css'
             onChange={e => (setName(e.target.value))}
             className='input-form'
             type='text'
-            placeholder='your name'>
+            placeholder=' your name'>
             </input>
 
             <input 
             onChange={e => (setLastName(e.target.value))}
             className='input-form'
             type='text'
-            placeholder='your last name'>
+            placeholder=' your last name'>
             </input>
 
             <input 
             onChange={e => (setEmail(e.target.value))}
             className='input-form'
             type='email'
-            placeholder='your email'>
+            placeholder=' your email'>
             </input>
 
             <button className='form-button'>Submit</button>
