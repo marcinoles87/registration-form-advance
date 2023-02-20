@@ -1,5 +1,5 @@
 
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 
 import '../components/form.css'
@@ -8,11 +8,12 @@ import '../components/form.css'
 
  function Form() {
 
-  const [name,setName] = useState('');
+  let [name,setName] = useState('');
   const [lastName,setLastName] = useState('');
   const [email,setEmail] = useState('');
 
-  const fullName = `${name} ${lastName} ${email}` 
+  const fullName = `${name} ${lastName} ${email}` ;
+  
 
   return (
     <div className='form-container'>
@@ -25,21 +26,22 @@ import '../components/form.css'
             className='input-form'
             type='text'
             placeholder=' your name'>
-            </input>
+              
+            </input><p>{name.length >=5 ? '' : 'nazwa za krotka ...'}</p>
 
             <input 
             onChange={e => (setLastName(e.target.value))}
             className='input-form'
             type='text'
             placeholder=' your last name'>
-            </input>
+            </input><p>{lastName.length >=3 ? '' : 'nazwa za krotka ...'}</p>
 
             <input 
             onChange={e => (setEmail(e.target.value))}
             className='input-form'
             type='email'
             placeholder=' your email'>
-            </input>
+            </input><p>{email.length >=2 ? '' : 'nazwa za krotka ...'}</p>
 
             <button className='form-button'>Submit</button>
 
