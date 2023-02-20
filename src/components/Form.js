@@ -14,13 +14,18 @@ import '../components/form.css'
 
   const fullName = `${name} ${lastName} ${email}` ;
 
-  const [submitted,setSubmitted] = useState(false)
+
+  const [submitted,setSubmitted] = useState(false);
+  const [valid,setValid] = useState(false);
 
   const handleSubmitted = (e) =>{
     e.preventDefault()
-    setSubmitted(true)
-    
 
+    if(name && lastName && email){
+    setValid(true)
+  }
+
+    setSubmitted(true)
     
   }
   
@@ -30,7 +35,7 @@ import '../components/form.css'
         
         <form className='form-registration' onSubmit={handleSubmitted}>
 
-            {submitted ? <div className='succes-message'>Succes ! your message was send</div> : null}
+            {submitted && valid? <div className='succes-message'>Succes ! your message was send</div> : null}
 
             <h1>Form Registration</h1>
 
