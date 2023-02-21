@@ -25,9 +25,8 @@ import '../components/form.css'
     setValid(true)
   }
 
-    setSubmitted(e.target.value = '')
-
-    setLastName('')
+   setSubmitted(true)
+   setLastName('')
     
   }
   
