@@ -25,7 +25,9 @@ import '../components/form.css'
     setValid(true)
   }
 
-    setSubmitted(true)
+    setSubmitted(e.target.value = '')
+
+    setLastName('')
     
   }
   
@@ -37,7 +39,7 @@ import '../components/form.css'
 
             {submitted && valid? <div className='succes-message'>Succes ! your message was send</div> : null}
 
-            <h1>Form Registration</h1>
+            {/* <h1>Form Registration</h1> */}
 
             <input 
             onChange={e => (setName(e.target.value))}
@@ -68,7 +70,7 @@ import '../components/form.css'
         </form>
 
       <div className='fullinfo'>
-        <h1>Full Information about User</h1>
+        <h1>User information</h1>
         {fullName}
         {/* <h3>{name} {lastName} {email}</h3> */}
       </div>
