@@ -70,7 +70,7 @@ import '../components/form.css'
 
         </form>
 
-        <div>{info ? <div className='fullinfo'> <h1>User information</h1>{fullName} </div>: ''}</div>
+        <div className='info'>{info ? <div className='fullinfo'> <h1>User information</h1>{fullName} </div>: ''}</div>
 
     </div>
 
