@@ -17,6 +17,7 @@ import '../components/form.css'
 
   const [submitted,setSubmitted] = useState(false);
   const [valid,setValid] = useState(false);
+  const [info , setInfo] = useState(false)
 
   const handleSubmitted = (e) =>{
     e.preventDefault()
@@ -26,6 +27,7 @@ import '../components/form.css'
   }
 
    setSubmitted(true)
+   setInfo(true)
    setLastName('')
     
   }
@@ -68,14 +70,11 @@ import '../components/form.css'
 
         </form>
 
-      <div className='fullinfo'>
-        <h1>User information</h1>
-        {fullName}
-        {/* <h3>{name} {lastName} {email}</h3> */}
-      </div>
-
+        <div>{info ? <div className='fullinfo'> <h1>User information</h1>{fullName} </div>: ''}</div>
 
     </div>
+
+    
   )
 }
 
