@@ -10,12 +10,13 @@ body{
 }
 
 .dark{
-  background-color: black;
+  transition: 2s;
+  background-color: rgb(11, 0, 57);
 }
 
 .slider{
   background-color: white;
-  width: 100px;
+  width: 90px;
   height: 40px;
   border:1px solid black;
   border-radius: 20px;
@@ -29,14 +30,15 @@ body{
   border: 1px solid black;
   border-radius: 20px;
   transition: 1s;
-  background-color: blue;
+  background-color:rgb(11, 0, 57);
   
 }
 
 .slide:focus{
-  transform: translateX(40px);
-  background-color: white;
+  transform: translateX(50px);
+  background-color: rgb(249, 0, 0);
 }
+
 
 
 
