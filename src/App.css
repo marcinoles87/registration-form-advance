@@ -9,3 +9,28 @@ body{
   background-color: #4d4dffcb;
 }
 
+.slider{
+  background-color: white;
+  width: 100px;
+  height: 40px;
+  border:1px solid black;
+  border-radius: 20px;
+}
+
+
+.slide{
+  
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: 1s;
+  background-color: blue;
+  
+}
+
+.slide:focus{
+  transform: translateX(40px);
+  background-color: white;
+}
+

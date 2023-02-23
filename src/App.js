@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
 
-      <span className='slider'><input type={'checkbox'}></input></span>
+      <div className='slider'><input className='slide' type={'button'}></input></div>
       
       <Form></Form>
       
