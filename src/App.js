@@ -4,11 +4,16 @@ import Form from './components/Form'
 
 function App() {
 
+  const check = document.getElementsByClassName('slide')
+  const bd = document.querySelector('body')
 
-
-  const [on,setOn] = useState(false);
+  console.log(bd)
 
   const handleOn = () =>{
+   
+    if(check){
+    bd.classList.toggle('dark')
+    }
     
 }
 
